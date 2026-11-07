@@ -1,0 +1,62 @@
+# ---- 凭据：任何时候都不进仓库 ----
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.oauth-tokens*.json
+credentials*.json
+secrets*.json
+
+# ---- 智能体的本地状态（各工具自带的记忆和本机设置只当缓存，不入库）----
+.claude/settings.local.json
+.workbuddy/
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ---- Windows ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Linux ----
+*~
+.directory
+.nfs*
+
+# ---- 编辑器 ----
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Node ----
+node_modules/
+
+# ---- 日志与临时文件 ----
+*.log
+tmp/
+.tmp/
